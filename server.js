@@ -1,15 +1,4 @@
-// import { createServer } from "node:http";
-
-// const server = createServer((request, response) => {
-//   response.write("Hello World");
-
-//   return response.end();
-// });
-
-// server.listen(3000);
-
 import fastify from "fastify";
-// import { InMemoryDatabase } from "./memory-database.js";
 import { PostgresDatabase } from "./postgres-database.js";
 
 const server = fastify();
