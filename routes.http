@@ -1,0 +1,27 @@
+GET http://[::1]:3000/videos
+
+###
+GET http://[::1]:3000/videos?search=01
+
+### 
+POST http://[::1]:3000/videos
+Content-Type: application/json
+
+{
+  "title": "Video 01",
+  "description": "This is the 01 video",
+  "duration": 180
+}
+
+###
+PUT http://[::1]:3000/videos/6c26ce54-a433-47f9-b009-f8a0d4ac3f9e
+Content-Type: application/json
+
+{
+  "title": "Video 01",
+  "description": "This is the first video",
+  "duration": 180
+}
+
+###
+DELETE http://[::1]:3000/videos/6c26ce54-a433-47f9-b009-f8a0d4ac3f9e
